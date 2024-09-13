@@ -7,8 +7,8 @@ const Home = () => {
 
   const fetchMovies = async (query = '') => {
     const url = query
-      ? `https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&query=${query}`
-      : `https://api.themoviedb.org/3/movie/popular?api_key=YOUR_API_KEY`;
+      ? `https://api.themoviedb.org/3/search/movie?api_key=0cfd12c4414e1ce0813b0890e96f723e&query=${query}`
+      : `https://api.themoviedb.org/3/movie/popular?api_key=0cfd12c4414e1ce0813b0890e96f723e`;
     const res = await fetch(url);
     const data = await res.json();
     setMovies(data.results);
